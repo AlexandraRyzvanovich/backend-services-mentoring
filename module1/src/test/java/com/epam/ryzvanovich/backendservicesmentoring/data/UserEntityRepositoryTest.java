@@ -1,5 +1,6 @@
 package com.epam.ryzvanovich.backendservicesmentoring.data;
 
+import com.epam.ryzvanovich.backendservicesmentoring.data.UserRepository;
 import com.epam.ryzvanovich.backendservicesmentoring.model.UserEntity;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
