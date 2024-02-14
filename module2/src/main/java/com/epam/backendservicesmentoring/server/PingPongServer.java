@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 public class PingPongServer {
     private static final Logger LOGGER = LogManager.getLogger(PingPongServer.class);
-    private static final int PORT = 8089;
+    private static final int PORT = 8080;
     private Server server;
 
     public void startServer() {
