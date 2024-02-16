@@ -1,0 +1,18 @@
+server:
+  port: 9090
+spring:
+  kafka:
+    order:
+      bootstrap-servers: https://trusting-goldfish-11962-us1-kafka.upstash.io:9092
+      security:
+        protocol: SASL_SSL
+      sasl:
+        jaas:
+          config: org.apache.kafka.common.security.scram.ScramLoginModule required username="dHJ1c3RpbmctZ29sZGZpc2gtMTE5NjIkxF6ClG-WXK_X9oI_tYAB1bHtKC5l9KM" password="MTRmYTU3ZmUtNDg4Yi00MjU1LWFkNDgtODhlYmIyODE1NmZk";
+        mechanism: SCRAM-SHA-256
+      topic:
+        create-order: demo_java_topic
+      consumer:
+        group-id:
+          notification: notification
+          service: service
