@@ -1,0 +1,8 @@
+{"namespace": "com.mentoring.avro.model",
+  "type": "record",
+  "name": "Order",
+  "fields": [
+    {"name": "order", "type": "int"},
+    {"name": "name",  "type": "string"}
+  ]
+}
