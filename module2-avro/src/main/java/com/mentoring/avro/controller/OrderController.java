@@ -21,8 +21,8 @@ public class OrderController {
     }
 
     @PostMapping
-    public ResponseEntity<?> createOrder(@RequestBody Order order) throws ExecutionException, InterruptedException {
+    public ResponseEntity<Void> createOrder(@RequestBody Order order) throws ExecutionException, InterruptedException {
         orderProducerService.sendCreateOrderEvent(order);
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.CREATED);
     }
 }

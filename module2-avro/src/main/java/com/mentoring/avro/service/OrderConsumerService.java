@@ -8,7 +8,7 @@ import org.springframework.kafka.support.Acknowledgment;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Service;
 
-@Service("NotificationService")
+@Service
 public class OrderConsumerService {
     private static final Logger log = LoggerFactory.getLogger(OrderConsumerService.class);
 
